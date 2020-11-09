@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.phones,
+.login,
+.group,
+.profile-photo,
+.download,
+.download__container {
+  display: flex;
+  align-items: center;
+}
+
+.phones {
+  justify-content: center;
+}
+
+.phones img {
+  height: 650px;
+}
+
+.login {
+  display: block;
+  justify-content: space-around;
+  width: 350px;
+  max-width: 350px;
+  margin-top: 30px;
+}
+
+.group {
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 0;
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+}
+
+.group:nth-child(1) {
+  min-height: 300px;
+}
+
+.instagram-logo {
+  height: 70px;
+}
+
+.profile-photo {
+  align-items: center;
+  margin: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  height: 100px;
+}
+
+.continue {
+  background-color: #0095f6;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.logout {
+  color: #0095f6;
+  margin-top: 15px;
+}
+
+.not-recognized {
+  color: #a0a0a0;
+}
+
+.login-link {
+  color: #0095f6;
+}
+
+.download {
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.download__container {
+  width: 100%;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.download__button {
+  height: 43px;
+  width: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+
+.download__button:nth-child(1) {
+  background-image: url('./img/app-store.png');
+}
+
+.download__button:nth-child(2) {
+  background-image: url('./img/google-play.png');
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 875px) {
+  .phones {
+    display: none;
+  }
+  .login {
+    margin: auto;
+  }
+}
